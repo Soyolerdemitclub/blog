@@ -5,10 +5,50 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
+<html>
+	<link rel="stylesheet" href="assets/styelsheets/application.css">
+   	 <!--TOP-->
+   	<header>
+   		<div class="box">
+   			<div class="home">
+   			 	<a href="index.html.erb" class="home">home</a>
+   			</div>
+   			<div class="navigator">
+   				
+   				<a href="login.html" >login</a>
+   			 	<a href="contact.html" >contact</a>
+   			 	<a href="show.html" >pages</a>
+   			 	<a href="papaers.html" >papers</a>
 
-<%= yield %>
+   			
+   			</div>
+   		</div>
+   	</header>
+   	 <!--TOP-->
+    <body>
+    	<div class="photobox imageresize">
+    		<p><a href="gallery.html" class="none">picture</p></a>
+    		<img src="image/1.jpg">
+    	</div>
+    	<div class="post">
+    		<%= yield %>
+    	</div>
+    	<div class="zurag picsize">
+    		<p>picture</p>
+    	 <img src="image/2.jpeg">
+    	</div>
+       <!--like-->
+          <div class="like">
+          
+          <p><a href="https://www.facebook.com/groups/seikoitclub/?ref=bookmarks.html" >facebook</a></p>
+          <a href="https://www.google.mn/?gws_rd=ssl.html" >google</a>
+        
+        </div>
+       <!--bot-->
+    <div class="bot logo">
+          <img src="image/3.png">
+    </div>
+   
 
-</body>
+    </body>
 </html>
