@@ -1,29 +1,22 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Listing Posts</h1>
-
 <table>
-  <thead>
-    <tr>
-    
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <h2><p><%= post.title %></p></h2>
-        <%= image_tag post.avatar.url(:thumb) %>
-         <p><%= post.content.html_safe %></p>
-        <p><%= link_to 'Show', post %>
-        <%= link_to 'Edit', edit_post_path(post) %>
-        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </tr>
+    <h1 id="page_title">Posts listing</h1>
+      <div id="posts_wrapper" class="skinny_wrapper">
+      <% @posts.each do |post| %>
+        <div class="post">
+          <tr>
+          <h2><p><%= post.title %></p></h2>
+          <%= image_tag post.avatar.url(:medium) %>
+          <h5><p><%= post.content.html_safe %></p></h5>
+          <p><%= link_to 'Show', post %>
+          <%= link_to 'Edit', edit_post_path(post) %>
+          <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' } %></p>
+        </tr>
     <% end %>
+      </div>
+    </div>
   </tbody>
 </table>
-
 <br>
 
 <%= link_to 'New Post', new_post_path %>
