@@ -1,1 +1,7 @@
+#Webrick
+Сервер рубигийн 'default' - аар авсан сервар ба доорк линкээр орон шалгана уу...
 https://damp-ridge-15949.herokuapp.com
+
+#Nginx
+'Passnager' - ашиглан Nginx болгон өөрчилсөн хувилбар:
+http://guarded-scrubland-53116.herokuapp.com
