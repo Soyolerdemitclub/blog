@@ -67,20 +67,32 @@ h6 {
   border: 4px solid #000000;
   border-radius: 10px;
   margin-top: 2%;
+<<<<<<< HEAD
   margin-left: 10%;
   position: absolute;
+=======
+  left: 9%;
+  position: fixed;
+>>>>>>> 673077c0130edb329b553249a261eff5a2306c70
   text-align: center;
   overflow: hidden;
 }
 .post {
   background-color: #F08080;
+<<<<<<< HEAD
   width: 40%;
   height: auto;
   margin-left: 30%;
+=======
+  width: 45%;
+  height: 60%;
+  left: 28%;
+>>>>>>> 673077c0130edb329b553249a261eff5a2306c70
   margin-top: 2%;
   border: 4px;
   border-radius: 10px;
   text-align: center;
+<<<<<<< HEAD
   position: absolute;
 }
 .postmain {
@@ -89,6 +101,9 @@ h6 {
 }
 .postshow {
   text-align: center;
+=======
+  position: fixed;
+>>>>>>> 673077c0130edb329b553249a261eff5a2306c70
 
 }
 .picbox2 {
@@ -98,9 +113,15 @@ h6 {
   border: 4px solid #000000;
   border-radius: 10px;
   margin-top: 2%;
+<<<<<<< HEAD
   margin-left: 74%;
   margin-right: 10%;
   position: absolute;
+=======
+  left: 76%;
+  right: 10%;
+  position: fixed;
+>>>>>>> 673077c0130edb329b553249a261eff5a2306c70
   text-align: center;
   overflow: hidden;
 }
