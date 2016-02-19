@@ -27,6 +27,7 @@ gem 'turbolinks'
 
 gem 'devise'
 gem "paperclip", "~> 4.3"
+gem 'friendly_id', '~> 5.1.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
