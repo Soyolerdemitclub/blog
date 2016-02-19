@@ -14,12 +14,12 @@
         <div class="navigator">
           <% if current_user %>
             <%= current_user.email %>
-          <%= link_to('logout', destroy_user_session_path, :method => :delete) %>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
         <% else %>
           <%= link_to 'Login', user_session_path %>
         <% end %>
           <a href="contact.html">Contact</a>
-          <a href="show.html">Pages</a>
+          <a href="star.html">Star</a>
           <a href="papers.html">Papers</a>
         </div>
       </div>
