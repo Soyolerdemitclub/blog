@@ -13,7 +13,7 @@ body {
   margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 p ul li {
+h1, h2, h3, h4, h5, h6, p, ul, li {
   font-family: 'Oswald', sans-serif;
   color: #000000;
 }
@@ -35,11 +35,11 @@ h5 {
 h6 {
   font-size: 1rem;
 }
-p li {
+p, li {
   font-size: 1.1rem;
   line-height: 1.75;
 }
-p ul ol {
+p, ul, ol {
   margin: 0 0 1.6em 0;
 }
 /*# Navigation Bar :D */
@@ -80,8 +80,13 @@ $border:#E9E9E9;
     a {
       color: #000;
       text-decoration: none;
-      margin: 0 1rem;
       font-size: 1rem;
+      border: 2px solid #E9E9E9;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 700;
+      font-size: .9em;
+      padding: 0.75em 1rem;
     &:hover {
     color: #E9E9E9;
     }
@@ -90,6 +95,7 @@ $border:#E9E9E9;
 }
 
 /*# Navigation end :D */
+
 
 /*# Body Post Widget Picture :D */
 
@@ -151,7 +157,6 @@ $border:#E9E9E9;
   font-size: 1.5rem;
 }
 .skinny_wrapper {
-  width: 80%;
   max-width: 750px;
   margin: 0 auto;
 }
