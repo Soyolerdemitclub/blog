@@ -1,0 +1,11 @@
+#posts_wrapper {
+	padding: 3em 0;
+	.post {
+		text-align: center;
+		h2 {
+			margin-bottom: 0;
+			font-size: 2em;
+			text-transform: uppercase;
+		}
+	}
+}
