@@ -29,3 +29,10 @@
 		margin: 2rem 0;
 	}
 }
+.image-wrapper img {
+	overflow: hidden;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
