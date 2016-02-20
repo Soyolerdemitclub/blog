@@ -14,8 +14,9 @@
               <a href="#">Star</a>
               <a href="#">Papers</a>
               <% if current_user %>
-                <%= current_user.email %>
+	      <%= link_to 'Edit Profile',edit_user_registration_path %>
               <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+              <div class="round-image-50"><%= image_tag(current_user.image.url(:thumb)) %></div>
               <% else %>
                 <%= link_to 'Login', user_session_path %>
               <% end %>
