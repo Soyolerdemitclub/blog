@@ -5,21 +5,22 @@
       <div id="posts_wrapper" class="skinny_wrapper">
       <% @posts.each do |post| %>
         <div class="posts releaseInfo alert-info alert">
-          <hr><h2><%= post.title %></h2>
+          <h2><%= post.title %></h2>
           <div class="image-wrapper">
-          <%= image_tag post.avatar.url(:medium) %>
+          <hr><%= image_tag post.avatar.url(:medium) %>
           </div>
           <h5><p><%= post.content.html_safe %></p></h5>
-        </div>
+        </div></hr>
+          <div class="button">
           <%= link_to 'Show', post %>
           <%= link_to 'Edit', edit_post_path(post) %>
           <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' } %></p>
-          <% end %></hr>
-      </div>
+          </div>
+          <% end %>
+
+        </div>
     </div>
   </tbody>
 </table>
 <br>
-
-<%= link_to 'New Post', new_post_path %>
-</center>
+</center> 

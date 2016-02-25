@@ -13,16 +13,42 @@
               <a href="#">Contact</a>
               <a href="#">Star</a>
               <a href="#">Papers</a>
+              <div class="dropdown">
+              <div class="dropbtn"><a>Profile</a></div>
+              <div class="dropdown-content">
               <% if current_user %>
-	      <%= link_to 'Edit Profile',edit_user_registration_path %>
-              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-              <div class="round-image-50"><%= image_tag(current_user.image.url(:thumb)) %></div>
-              <% else %>
-                <%= link_to 'Login', user_session_path %>
-              <% end %>
+                  <div class="round-image-50">
+                    <%= image_tag(current_user.image.url(:thumb)) %>
+                  </div>
+                  <p>Welcome <p><%= current_user.name%>-san!</p></p>
+                    <p><%= link_to 'New Post', new_post_path %></p>
+                    <p><%= link_to 'Edit Profile',edit_user_registration_path %></p>
+                    <p><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></p>
+                    <% else %>
+                    <p><%= link_to 'Login', user_session_path %></p>
+                  <% end %>
+                </div>
+            </div>
+            </div>
+              </div>
+
             </nav>
     </header>
     <!--Navigation bar end-->
+
+    <!-- Slider -->
+    <div>
+        <div id="sliderFrame">
+        <div id="slider">
+            <img src="images/1.jpg" alt="Welcome" />
+            <img src="images/2.jpg" alt="Our" />
+            <img src="images/3.jpg" alt="Japanese" />
+            <img src="images/4.jpg" alt="Novel" />
+            <img src="images/5.jpg" alt="Site" />
+        </div>
+    </div>
+    <!-- Slider end -->
+
     <!--Body post widget-->
     <div class="wrapper wrapper_padding clearfix">
       <div class="col-2 homepage_content">
