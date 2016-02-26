@@ -11,13 +11,10 @@
           </div>
           <h5><p><%= post.content.html_safe %></p></h5>
         </div></hr>
-          <div class="button">
-          <%= link_to 'Show', post %>
-          <%= link_to 'Edit', edit_post_path(post) %>
-          <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' } %></p>
-          </div>
+          <%= link_to 'Show', post, :class=>"button" %>
+          <%= link_to 'Edit', edit_post_path(post), :class=>"button" %>
+          <%= link_to 'Destroy', post, method: :delete, data: {confirm: 'Are you sure?' }, :class=>"button" %></p>
           <% end %>
-
         </div>
     </div>
   </tbody>

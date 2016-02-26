@@ -3,6 +3,11 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 <html>
+<title>Welcome Katsura Novel</title>
+<meta name="keywords" content="Japanese novel" />
+<meta name="description" content="Япон зохиолыг монгол орчуулгатай" />
+<meta name="author" content="Соёл эрдэм IT Club" />
+<meta http-equiv="Content-Type" content="charset=UTF-8" />
     <link rel="stylesheet" href="stylesheets/application.scss">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!--Navigation bar-->
@@ -13,19 +18,19 @@
               <a href="#">Contact</a>
               <a href="#">Star</a>
               <a href="#">Papers</a>
-              <div class="dropdown">
-              <div class="dropbtn"><a>Profile</a></div>
-              <div class="dropdown-content">
+
               <% if current_user %>
+              <div class="dropdown"><p><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></p>
+              <div class="dropdown-content">
                   <div class="round-image-50">
                     <%= image_tag(current_user.image.url(:thumb)) %>
                   </div>
                   <p>Welcome <p><%= current_user.name%>-san!</p></p>
                     <p><%= link_to 'New Post', new_post_path %></p>
                     <p><%= link_to 'Edit Profile',edit_user_registration_path %></p>
-                    <p><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></p>
                     <% else %>
-                    <p><%= link_to 'Login', user_session_path %></p>
+                    <%= link_to 'Login', user_session_path %>
+                    <%= link_to 'Sign Up', new_user_registration_path %>
                   <% end %>
                 </div>
             </div>
